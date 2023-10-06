@@ -9,6 +9,33 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="page_type" content="">
+
+
+    <style>
+      /* Add your custom CSS for the banner here */
+      #cookie-banner {
+          display: none;
+          position: fixed;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+      }
+      #cookie-banner button {
+          background-color: #007BFF;
+          color: #fff;
+          border: none;
+          padding: 5px 10px;
+          cursor: pointer;
+      }
+    </style>
+
+
+
+
     <link rel="stylesheet" href="https://website56445.nicepage.io/nicepage.css?version=c7177cb0-19db-42fb-90d8-6888aa31d79c" media="screen">
     <script class="u-script" type="text/javascript" src="//static.nicepage.com/shared/assets/jquery-1.9.1.min.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="//capp.nicepage.com/59b0f2028590c2124be8cde0fea4ef993a7aa7ad/nicepage.js" defer=""></script>
@@ -19,6 +46,13 @@
 </head>
 
 <body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner">
+      <p>This website uses cookies to enhance your experience. By continuing to use this site, you consent to our use of cookies.</p>
+      <button id="accept-cookies">Accept</button>
+    </div>
+
+
     <div id="popupFormSales" class="popup " style="display:none; border-width: 5px;padding-top: 5px;padding-left: 5px;padding-bottom: 5px;padding-right: 5px;">
         <!-- this formspree works -->
         <form onsubmit="submitForm(event)" action="https://formspree.io/f/mzbqlqap" method="POST" style="margin: auto; width: 100%;">
