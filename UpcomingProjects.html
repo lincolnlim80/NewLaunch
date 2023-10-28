@@ -33,22 +33,27 @@
   </head>
 
 <body class="my-divbackground1" style="background-image: url('./img/background2.png');">
-    <div id="popupFormSales" class="popup " style="display:none; border-width: 5px;padding-top: 5px;padding-left: 5px;padding-bottom: 5px;padding-right: 5px;">
+    
+  <div id="popupFormSales" class="popup" style="display:none">
         <!-- this formspree works -->
-        <form onsubmit="submitForm(event)" action="https://formspree.io/f/mzbqlqap" method="POST" style="margin: auto; width: 100%;">
-          <label id="formname" style="font-size: 20px; margin-bottom: 30px">Have a question in mind or wanting to check your eligibility to buy / invest? 
+        <form onsubmit="submitForm(event)" action="https://formspree.io/f/mzbqlqap" method="POST">
+          <label id="formname">Have a question in mind or wanting to check your eligibility to buy / invest?
             <br>
-            Our Sales Team are here to help.</label>
+            Our Sales Team are here to help.
+          </label>
           <label id="name">Your Name:</label>
-          <input type="text" name="name" required="" autocomplete="name">
+          <input type="text" name="name" required="" autocomplete="name"></input>
           <label id="mobile">Your Mobile Number:</label>
-          <input type="tel" name="mobile" required="" autocomplete="tel">
+          <input type="tel" name="mobile" required="" autocomplete="tel"></input>
           <label id="email">Your Email:</label>
-          <input type="email" name="email" autocomplete="email">
+          <input type="email" name="email" autocomplete="email"></input>
           <label id="enquiry">Enquiry:</label>
-          <textarea name="enquiry" style="font-size: 0.75rem;"></textarea>
-          <button type="submit" class="send" style="font-size: 2rem;font-weight: 600">Send</button>
-          <a class="close" onclick="closeFormSales()">Close</a>
+          <textarea name="enquiry"></textarea>
+          <br>
+          <div class="button-container" style="width: 100%;">
+            <button type="submit" style="width: 50%;">Send</button><span></span>
+            <button type="button" style="width: 50%;" onclick="closeFormSales()">Close</button>
+          </div>
         </form>
     </div>
 

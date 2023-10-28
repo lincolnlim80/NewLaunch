@@ -368,7 +368,7 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
 @media (min-width: 768px) {
     .vsection {
         background-color: #515157ce;
-        padding: 20px;
+        padding: 0px;
     }
     .hsection {
         background-color: #229366;
@@ -379,38 +379,135 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
 @media (min-width: 1024px) {
     .vsection {
         background-color: #515157ce;
-        padding: 40px;
+        padding: 0px;
     }
     .hsection {
         background-color: #a01f9c;
     }
 }
 
+/* below is for pop-up form */
+  /* my own style for popup */
+.popup{
+    display:none;
+    position:fixed;
+    z-index:1;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:40%;
+    height:80%;
+    overflow:auto;
+    background-color:#565454;
+    margin:0;
+    padding:10px;
+    border:10px solid #888;
+    border-width: 3px;
+    font-size:1rem;
+    font-weight:200;
+    }
+.send{
+	margin-top:10px;
+	}
+.close{
+	color:#fff;
+	margin-top:10px;
+	}
+
+form{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    max-width:60%;
+    max-height: auto;
+    margin:0 auto;
+    }
+
+
+.popup .send:focus,.popup .send:hover{
+    color:#000;
+    background-color:#cac3c3;
+    text-decoration:none;
+    cursor:pointer
+    }
+.popup .close:focus,.popup .close:hover{
+    color:#cac3c3;
+    text-decoration:none;
+    cursor:pointer
+    }
+
+label{
+    display: inline; /* Labels are typically inline elements */
+    cursor: pointer; /* The cursor changes to a pointer when hovering over a label, indicating it's clickable */
+    color:#fff; /* The text color may vary depending on the user agent's color scheme */
+    font-size: 0.8rem; /* The font size may vary depending on the user agent's default font settings */
+    font-weight: normal; /* Typically, labels have normal font weight */
+    margin: 0; /* No margin by default */
+    padding: 0; /* No padding by default */
+    background-color: transparent; /* Typically, labels have a transparent background */
+    border: 0; /* No border by default */
+    text-align: left; /* Text alignment is typically left-aligned */
+    }
+    
+input{
+    display: inline-block; /* Inputs are typically displayed as inline-block elements */
+    box-sizing: border-box; /* The box model includes padding and border within the width and height */
+    padding:5px; /* Default padding around the input element */
+    border: 1px solid #ccc; /* Default border with a light gray color */
+    background-color:#cac3c3; /* Default background color is typically white */
+    color: -system-text; /* The text color may vary depending on the user agent's color scheme */
+    font-size: 0.8rem;  /* The font size may vary depending on the user agent's default font settings */
+    font-weight: normal; /* Typically, inputs have normal font weight */
+    margin: 0; /* No margin by default */
+    text-align: left; /* Text alignment is typically left-aligned */
+    cursor: text; /* The cursor style is usually set to a text cursor when hovering over the input */
+    width:100%;
+    }
+textarea{
+    display: inline-block; /* Textareas are typically displayed as inline-block elements */
+    box-sizing: border-box; /* The box model includes padding and border within the width and height */
+    padding: 2px; /* Default padding around the textarea element */
+    border: 1px solid #ccc; /* Default border with a light gray color */
+    background-color:#cac3c3; /* Default background color is typically white */
+    color: -system-text; /* The text color may vary depending on the user agent's color scheme */
+    font-size: 0.8rem;  /* The font size may vary depending on the user agent's default font settings */
+    font-weight: normal; /* Typically, textareas have normal font weight */
+    margin: 0; /* No margin by default */
+    text-align: left; /* Text alignment is typically left-aligned */
+    cursor: text; /* The cursor style is usually set to a text cursor when hovering over the textarea */
+    resize: both; /* Allows the textarea to be resized by the user, both horizontally and vertically */
+    overflow: auto; /* If the content exceeds the dimensions, it adds scrollbars */
+    width:100%;
+    height:200px;
+    }    
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed to control button spacing */
+    }
+/* below are for carousell */
 .menu-wrapper {
 	position: relative;
 	width: 90%;
 	height: auto;
 	margin: 0px;
-  padding: 0px;
-  border-top-width 5px;
-  border-bottom-width 5px
+    padding: 0px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
 	border: 1px solid black;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
-
-
 .menu	{
 	height: 100px; 
 	background: #f3f3f3;
 	box-sizing: border-box;
-  white-space: nowrap;
+    white-space: nowrap;
 	overflow-x: auto;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 	
 	.item {
-    white-space: wrap;
+        white-space: wrap;
 		display: inline-block;
 		width: auto;
 		height: 80px;
@@ -419,7 +516,6 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
 		box-sizing: border-box;
 	}
 }
-
 .paddle {
 	position: absolute;
 	top: 0;
