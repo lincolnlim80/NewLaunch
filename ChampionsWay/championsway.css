@@ -74,6 +74,7 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
         font-family: 'Lato', sans-serif;
         font-size: 16px; /* Default font size for the entire page */
         line-height: 1.5; /* Adjust the line height as needed */
+        padding: 20px;
         /* text indent should not be placed here as it'll affect list and other tags. best to define more specifically. */
         }
     p   {

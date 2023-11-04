@@ -8,7 +8,7 @@ function showSlide(index) {
     index = 0;
   }
 
-  const offset = -index * 800; // Adjust 500px to the width of your images
+  const offset = -index * 900; // Adjust 500px to the width of your images
   const container = document.querySelector('.carousel-container');
   container.style.transform = `translateX(${offset}px)`;
 
