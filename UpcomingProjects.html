@@ -2,7 +2,7 @@
 <!-- add dot in filepath line 7, 8, 15, 64, 86, 87, remove text in 104 and remove filepath in 163 ; remove pixels-->
 <html lang="en-US">
   <head> 
-    <title>Clementi Avenue 1 Condominium</title>
+    <title>Upcoming Condominium</title>
     <!-- Include Normalize.css .. Normalize.css is a CSS file that helps standardize and normalize default styles across different web browsers. It's often used as a starting point in web development to ensure a more consistent rendering of web content. -->
     <link rel="stylesheet" href="./rsc/Normalize.css"> 
     <link href="./projectsite.css" rel="stylesheet" />
@@ -25,8 +25,8 @@
       'https://connect.facebook.net/en_US/fbevents.js');
       fbq('init', '654802053409854');  //<!-- This line will track events such as button press -->
       fbq('track', 'PageView');     // <!-- This line will track page views -->
-      //below is an access token to make sure that only authorised data from your website or app is shared with Meta. 
-      //EAAJZAqv0cIC4BO1TPz64L8lzVOUH5eAhlfCBxPRl2vj0PTxEi9BUzgPtw9y9gRexPZCXgMObNYD7YCzxfQtpY8KeHuiMLZAvOIPmFHShwTnpU0TIX4Ix9YZCmjCaEPEsgWXsSZCpyWJ3fs4i6kz4FKitXxEDDH6ZAqBHcYXNRfRAd55fCqApnaT79qd81d7gZDZD
+      //below is an access token to make sure that only authorised data from your website or app is shared with Meta. Used for Event testing:https://developers.facebook.com/tools/explorer/?method=POST&path=654802053409854%2Fevents&version=v18.0&data=[%7B%22action_source%22%3A%22website%22%2C%22event_id%22%3A12345%2C%22event_name%22%3A%22TestEvent%22%2C%22event_time%22%3A1700997248%2C%22user_data%22%3A%7B%22client_ip_address%22%3A%22254.254.254.254%22%2C%22client_user_agent%22%3A%22Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A63.0)%20Gecko%2F20100101%20Firefox%2F63.0%22%2C%22em%22%3A%22f660ab912ec121d1b1e928a0bb4bc61b15f5ad44d5efdc4e1c92a25e99b8e44a%22%7D%7D]&test_event_code=TEST52849
+      //EAAJZAqv0cIC4BO4NeoWh7J8jOX8f3eQvRxKZBHmTVNZAyA5di1sbF4WkxZCCYiIdi7ZCSMfI1zzEB8bxU0wzou7Fc9ZA6Ry6dZByuo1ojmO6mUHQwxZCm0oyTzBgENrf11ZC3VR5Kdq9QWWvtcW1lUAOEgIgjuAAZAHR4n6kRAnj9JZBHM2xpldSKVA1hgMGNMq4wZDZD
     </script>
     <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=654802053409854&ev=PageView&noscript=1"
@@ -50,7 +50,7 @@
           <label id="email">Your Email:</label>
           <input type="email" name="email" autocomplete="email"></input>
           <label id="enquiry">Enquiry:</label>
-          <textarea name="enquiry"></textarea>
+          <textarea name="enquiry">Hi Lincoln, please get in touch with me. Thanks.</textarea>
           <br>
           <div class="button-container" style="width: 100%;">
             <button type="submit" style="width: 50%;">Send</button><span></span>
@@ -63,15 +63,15 @@
       <!-- this section contains the Menu -->
       <div style="height: auto; width: auto; background: linear-gradient(to bottom, rgba(118, 102, 66, 0.7), rgba(233, 227, 214, 0.7)); padding-top: 5px; padding-left: 5px; padding-right: 5px">
         <div style="display: flex; align-items: center;">
-          <a style="max-width: 20%; height: auto;" href="./UpcomingProjects.html">
+          <a class="headerlogo" href="./UpcomingProjects.html">
             <img src="./img/logo.png">
           </a>
           <div style="padding: 10px;">
-            <button style="padding: 10px; background-color: rgb(124, 89, 57);"><a href="#" style="color: bisque;" onclick="showGetInTouchSales()">Enquire Now</a></button>
-            <button style="padding: 10px; background-color: rgb(124, 89, 57);"><a href="https://share.ecoprop.com/R065963D" style="color: bisque;"> Explore All New Developments</a></button>
+            <button class="headerbutton" style="padding: 10px; background-color: rgb(124, 89, 57);"><a href="#" style="color: bisque;" onclick="showGetInTouchSales()">Enquire Now</a></button>
+            <button class="headerbutton" style="padding: 10px; background-color: rgb(124, 89, 57);"><a href="https://share.ecoprop.com/R065963D" style="color: bisque;"> Explore All New Developments</a></button>
             <br>
             <br>
-            <a class="whatsapp-link" href="https://wa.me/6588171953?text=Hi%20Lincoln,%20I%20have%20an%20enquiry.%20Please%20reach%20out%20to%20me.%20My%20name%20is%20"><img alt="" src="./img/icon-whatsapp1a.png"></a>
+            <a class="whatsapp-link" href="https://wa.me/6588171953?text=Hi%20Lincoln,%20I%20have%20an%20enquiry.%20Please%20reach%20out%20to%20me.%20My%20name%20is%20"><img class="headerbutton" alt="" src="./img/icon-whatsapp1a.png"></a>
           </div>
         </div>
         <h5 style="color: rgb(109, 16, 89);">Tender >> Design >> <span style="color: rgba(174, 37, 80, 0.902); font-size:1.5rem ; font-weight: 800;">Sales</span> >> Build >> TOP</h5>
@@ -87,6 +87,7 @@
         <ul class="menu" style="margin-top: 5px; margin-bottom: 5px;">
         <li class="item"><a href="./ChampionsWay/championsway.html">Champions Way</a></li>
         <li class="item"><a href="./ClementiAve1/clementiave1.html">Clementi Avenue 1</a></li>
+        <li class="item"><a href="./PlantationClose/plantationclose.html">Plantation Close</a></li>
         <li class="item">Upcoming... Toa Payoh Lor 1</li>
         </ul>
       
@@ -103,13 +104,13 @@
     <section3>
       <!-- this section contains the Highlight of the Month -->
       <div id="details" style="width: 100%;">
-        <h1>Highlight of The Month</h1>
+        <h1>Highlight of the Month</h1>
         <table style="width: 100%; height:auto">
             <tbody>
                 <!-- Project Details Table Content -->
                 <tr>
                 <td style="width: 35%;"><strong>Project Name</strong></span></td>
-                <td style="width: 65%;"><span style="font-size: 1.2rem; font-weight: bold; color: rgba(174, 37, 80, 0.902)">Clementi Ave 1 Residences (TBC)</span></td>
+                <td style="width: 65%;"><span style="font-size: 1.2rem; font-weight: bold; color: rgba(174, 37, 80, 0.902)">Plantation Close Residences (TBC)</span></td>
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>Land Use / Zoning</strong></span></td>
@@ -117,31 +118,31 @@
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>Type of Housing Development</strong></span></td>
-                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">Condominium</span></td>
+                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">Executive Condominium</span></td>
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>Site Area</strong></span></td>
-                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">13,451.1 sqm</span></td>
+                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">20,038.2 sqm</span></td>
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>Permissible Gross Floor Area (GFA)</strong></span></td>
-                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">47,079 sqm (506,495 sqft)</span></td>
+                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">56,107 sqm (603,621 sqft)</span></td>
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>GFA psf</strong></span></td>
-                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">$1250 psf (GFA)</span></td>
+                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">$ TBA psf (GFA)</span></td>
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>Status</strong></span></td>
-                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">Awarded 15 November 2023</span></td>
+                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">Tender Close 1 February 2024</span></td>
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>Successful Tenderer</strong></span></td>
-                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">CSC Land Group (Singapore) Pte. Ltd. and Caspian Residential 3 Pte. Ltd.</span></td>
+                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">TBC</span></td>
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>Successful Tender Price</strong></span></td>
-                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">$633,447,945</span></td>
+                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">$ TBC</span></td>
                 </tr>
                 <tr>
                 <td style="width: 35%;"><strong>Lease Period</strong></span></td>
@@ -150,6 +151,9 @@
                 <tr>
                 <td style="width: 35%;"><strong>TOP Expected</strong></span></td>
                 <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">2028</span></td>
+                </tr>
+                <td style="width: 35%;"><strong>No. Units Expected</strong></span></td>
+                <td style="width: 65%;"><span style="color: #000000; font-size: 16px;">560</span></td>
                 </tr>
             </tbody>
         </table>
@@ -162,10 +166,11 @@
       <div style="width: 100%;" >
         <h2>Highlights</h2>
         <ul style="background-color: rgba(250, 240, 230, 0.7);">
-          <li>The Land Parcel is located in a predominantly residential estate within the Clementi Planning Area, bounded by Clementi Ave 1 and AYE. This new development is adjacent to Clavon and The Clement Canopy and across the road from Nan Hua High School.</li>
-          <li>Residents will be close to educational institutions such as NUS High School of Mathematics and Science, Nan Hua  High School, International Community School, National University of Singapore and Singapore Polytechnic. Residents can also enjoy greenery and recreation facilities such as Clementi Woods Park and Clementi Sports Hall, which are within walking distance from the Land Parcel. Ample retail and leisure amenities are available at Clementi Town Centre and the nearby Jurong Lake District, which is just one station away from Clementi MRT station.</li>
-          <li>The Land Parcel is conveniently linked to Ayer Rajah Expressway (AYE), and Clementi Road, providing easy access to the city centre, Jurong Lake District and the Jurong and Tuas industrial areas for residents.</li>
-          <li>The number of Dwelling Units (DUs) for the proposed development shall not exceed 501. Maximum building height is 140.0 m</li>
+          <li>The Land Parcel is located in a predominantly residential estate within the Tengah Town Planning Area, bounded by PIE and Bukit Batok Road. This new development is adjacent to another EC project and near the upcoming JE2 Tengah Park MRT as part of the Jurong Regional Line.</li>
+          <li>Residents will be close to educational institutions such as Kranji Primary School, Jurong Primary School, Yuhua Primary School, Princess Elizabeth Primary School, Crest Secondary School, Bukit Batok Secondary School, Jurongville Secondary School, River Valley High, Dulwich College, Jurong JC, Jurong Pioneer JC, Nanyang Technological University of Singapore, etc. </li>
+          <li>The development of JLD will revolve around 4 themes - Hub for Future Economy, New Paradigm of Mobility, Smart and Sustainable District and District of Gardens and Waters. Residents of Plantation Close will equally enjoy the benefits of these transformations.</li>
+          <li>The Land Parcel is conveniently linked to Pan-Island Expressway (PIE), and Bukit Batok Road, providing easy access to the Jurong Lake District, Jurong Innovation Distric and the Tuas Port.</li>
+          <li>The number of Dwelling Units (DUs) for the proposed development shall not exceed 560. Maximum building height is 70.0 m</li>
         </ul>
         <!-- <ol>
           <li>Item 1</li>
@@ -198,7 +203,7 @@
     <br>
     <section6>
       <!-- this section contains the Image of the Month -->
-      <iframe src="./ClementiAve1/ImageOfTheMonth.html" style="width:100%; height:900px; border: none;"></iframe>  <!-- this 100% refers to 100% of screen -->
+      <iframe src="./PlantationClose/ImageOfTheMonth.html" style="width:100%; height:900px; border: none;"></iframe>  <!-- this 100% refers to 100% of screen -->
       <!-- alternative to using iframe is to simply show image -->
       <!-- <div>
         <img src="./ChampionsWay/img/plotview.png" class="plot_img" >

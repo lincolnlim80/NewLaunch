@@ -358,6 +358,14 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
     margin-right: 0;
 }
 
+.headerlogo {
+    width: 30%;
+}
+.headerbutton {
+    width: auto;
+    font-size: 0.5rem;
+}
+
     /* for additional information, below style will choose not to resize and allow content to spill outside of viewport. the way the horizontal scroll works is then defined by values such as visible, hidden, scroll and auto*/
     /* .hsection {
         white-space: nowrap;
@@ -380,7 +388,12 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
     .popup{
         max-width:40%;
     }
-
+    .headerlogo {
+        width: 15%;
+    }
+    .headerbutton {
+        width: 30%;
+    }
 }
 
 /* PC LAYOUT */
@@ -394,6 +407,12 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
     }
     .popup {
         max-width:40%;
+    }
+    .headerlogo {
+        width: 10%;
+    }
+    .headerbutton {
+        width: fit-content;
     }
 }
 
