@@ -9,7 +9,7 @@ function showSlide(index) {
     index = 0;
   }
 
-  const offset = -index * 900; // Adjust 500px to the width of your images
+  const offset = -index * 600; // Adjust 500px to the width of your images
   const container = document.querySelector('.carousel-container');
   container.style.transform = `translateX(${offset}px)`;
 
@@ -33,5 +33,5 @@ function moveSlide(offset) {
   }, 1000); // Adjust the timeout value as needed
 }
 
-setInterval(() => moveSlide(1), 5500); // Automatically advance the carousel every 5.5 seconds
+setInterval(() => moveSlide(1), 10000); // Automatically advance the carousel every 5.5 seconds
 showSlide(currentIndex); // Initialize the carousel

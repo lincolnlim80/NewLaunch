@@ -8,8 +8,8 @@ body {
   
   .carousel {
     position: relative;
-    width: 900px;
-    height: 900px;  /* to match with iframe height in main html file*/
+    width: 600px;
+    height: 600px;  /* to match with iframe height in main html file*/
     overflow: hidden;
   }
   
@@ -20,11 +20,11 @@ body {
   }
   
   .slide {
-    flex: 0 0 900;
+    flex: 0 0 600;
   }
   
   img {
-      width: 900px;
+      width: 600px;
       height: 100%;
     }
     

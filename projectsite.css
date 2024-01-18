@@ -403,7 +403,7 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
     }
     .iframesize {
         width: 100%; 
-        height: 900px; 
+        height: 600px; 
         border: none;
     }
 }
@@ -425,6 +425,11 @@ Use of Cards: Consider displaying tabular data as cards in a stacked format for 
     }
     .headerbutton {
         width: fit-content;
+    }
+    .iframesize {
+        width: 100%; 
+        height: 600px; 
+        border: none;
     }
 }
 
