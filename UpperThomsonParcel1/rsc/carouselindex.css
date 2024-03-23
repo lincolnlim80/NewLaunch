@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* background-color: #f0f0f0; */
+  }
+  
+  .carousel {
+    position: relative;
+    width: 600px;
+    height: 600px;  /* to match with iframe height in main html file*/
+    overflow: hidden;
+  }
+  
+  .carousel-container {
+    display: flex;
+    height: 100%;
+    transition: transform 2s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 600;
+  }
+  
+  img {
+      width: 600px;
+      height: 100%;
+    }
+    
+  button {
+      margin: 5px;
+    }
+  
